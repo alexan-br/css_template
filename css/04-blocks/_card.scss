@@ -1,0 +1,7 @@
+.card {
+  --flow-space: 0.938em;
+  img,
+  svg {
+    min-width: var(--card-img-min-width, 7em);
+  }
+}

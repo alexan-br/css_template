@@ -1,0 +1,480 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+}
+
+html {
+  -moz-text-size-adjust: none;
+  -webkit-text-size-adjust: none;
+  text-size-adjust: none;
+  scroll-behavior: smooth;
+}
+
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+button {
+  width: fit-content;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: initial;
+}
+
+ul,
+ol {
+  list-style: none;
+  padding: 0;
+}
+
+#root,
+#__next {
+  isolation: isolate;
+}
+
+button {
+  color: inherit;
+  background-color: initial;
+  border: none;
+  padding: 0;
+}
+
+body {
+  background: var(--color-white);
+  color: var(--color-dark);
+  font-size: var(--size-step-0);
+  font-family: var(--ff-base);
+  line-height: var(--leading-standard);
+  --flow-space: 6.25rem;
+}
+
+section {
+  --flow-space: 2.5rem;
+  padding-block: var(--section-padding, 0);
+  background-color: var(--bg-color, transparent);
+  box-shadow: 0 var(--elevation-offsetY, 0) var(--elevation-blur, 0);
+}
+
+:target {
+  scroll-margin-top: 5rem;
+}
+
+input,
+textarea,
+select {
+  padding: 10px 20px;
+  min-width: 100%;
+  border: 1px solid;
+  border-color: var(--color-dark);
+}
+input:valid,
+textarea:valid,
+select:valid {
+  border-color: var(--color-success);
+}
+input:focus:required:invalid,
+textarea:focus:required:invalid,
+select:focus:required:invalid {
+  border-color: var(--color-error);
+}
+input:optional,
+textarea:optional,
+select:optional {
+  border-color: var(--color-dark);
+}
+
+:root {
+  --ff-base: "Poppins Light";
+  --ff-bold: "Poppins SemiBold";
+  --ff-cursive: "NewYork";
+  --size-step--2: clamp(0.7813rem, 0.7759rem + 0.0268vw, 0.8rem);
+  --size-step--1: clamp(0.9375rem, 0.9196rem + 0.0893vw, 1rem);
+  --size-step-0: clamp(1.125rem, 1.0893rem + 0.1786vw, 1.25rem);
+  --size-step-1: clamp(1.35rem, 1.2893rem + 0.3036vw, 1.5625rem);
+  --size-step-2: clamp(1.62rem, 1.5248rem + 0.4759vw, 1.9531rem);
+  --size-step-3: clamp(1.944rem, 1.8019rem + 0.7106vw, 2.4414rem);
+  --size-step-4: clamp(2.3328rem, 2.1274rem + 1.0271vw, 3.0518rem);
+  --size-step-5: clamp(2.7994rem, 2.5093rem + 1.4505vw, 3.8147rem);
+  --size-max: clamp(7rem, 4rem + 2vw, 8.125rem);
+  --color-white: #f5f5f5;
+  --color-black: #121212;
+  --color-grey: #b4b4b4;
+  --color-light-brown: #b79f7e;
+  --color-brown: #613712;
+  --color-dark-brown: #38220e;
+  --color-success: #2daa29;
+  --color-error: #ca1b1b;
+  --color-warning: #c4822c;
+  --space-3xs: clamp(0.3125rem, 0.3125rem + 0vw, 0.3125rem);
+  --space-2xs: clamp(0.5625rem, 0.5446rem + 0.0893vw, 0.625rem);
+  --space-xs: clamp(0.875rem, 0.8571rem + 0.0893vw, 0.9375rem);
+  --space-s: clamp(1.125rem, 1.0893rem + 0.1786vw, 1.25rem);
+  --space-m: clamp(1.6875rem, 1.6339rem + 0.2679vw, 1.875rem);
+  --space-l: clamp(2.25rem, 2.1786rem + 0.3571vw, 2.5rem);
+  --space-xl: clamp(3.375rem, 3.2679rem + 0.5357vw, 3.75rem);
+  --space-2xl: clamp(4.5rem, 4.3571rem + 0.7143vw, 5rem);
+  --space-3xl: clamp(6.75rem, 6.5357rem + 1.0714vw, 7.5rem);
+  --small-width: 10rem;
+  --medium-width: 30rem;
+  --large-width: 60rem;
+  --wide-width: 90rem;
+  --max-width: 100vw;
+  --elevation-0-offsetY: 0px;
+  --elevation-0-blur: 0px;
+  --elevation-100-offsetY: 2px;
+  --elevation-100-blur: 2px;
+  --elevation-200-offsetY: 4px;
+  --elevation-200-blur: 4px;
+  --elevation-300-offsetY: 8px;
+  --elevation-300-blur: 8px;
+  --elevation-400-offsetY: 16px;
+  --elevation-400-blur: 16px;
+  --txt-align-right: right;
+  --txt-align-center: center;
+  --txt-align-left: left;
+  --max-body-text-width: 80ch;
+  --min-body-text-width: 60ch;
+  --max-title-text-width: 40ch;
+  --min-title-text-width: 20ch;
+  --border-radius: 5px;
+}
+
+@font-face {
+  font-family: "NewYork";
+  src: url("/fonts/newyork.OTF") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Poppins Light", sans-serif;
+  src: url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap");
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Poppins SemiBold", sans-serif;
+  src: url("https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap");
+  font-weight: 600;
+  font-style: normal;
+}
+.font {
+  font-family: var(--font-family, inherit);
+  font-size: var(--font-size, 1rem);
+}
+.font--regular {
+  --font-family: var(--ff-base);
+}
+.font--bold {
+  --font-family: var(--ff-bold);
+}
+.font--cursive {
+  --font-family: var(--ff-cursive);
+}
+.font--size--2 {
+  --font-size: var(--size-step--2);
+  max-width: var(--max-body-text-width);
+}
+.font--size--1 {
+  --font-size: var(--size-step--1);
+  max-width: var(--max-body-text-width);
+}
+.font--size--0 {
+  --font-size: var(--size-step-0);
+  max-width: var(--min-body-text-width);
+}
+.font--size-1 {
+  --font-size: var(--size-step-1);
+  max-width: var(--min-body-text-width);
+}
+.font--size-2 {
+  --font-size: var(--size-step-2);
+  max-width: var(--max-title-text-width);
+}
+.font--size-3 {
+  --font-size: var(--size-step-3);
+  max-width: var(--max-title-text-width);
+}
+.font--size-4 {
+  --font-size: var(--size-step-4);
+  max-width: var(--min-title-text-width);
+}
+.font--size-5 {
+  --font-size: var(--size-step-5);
+  max-width: var(--min-title-text-width);
+}
+.font--size-max {
+  --font-size: var(--size-max);
+  max-width: var(--min-title-text-width);
+}
+
+.center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+}
+
+.flow > * + * {
+  margin-top: var(--flow-space, 1em);
+}
+
+.hero {
+  --hero-bg-url: url("/img/nathan-dumlao-tA90pRfL2gM-unsplash.webp");
+  --hero-height: 100dvh;
+  --hero-text-color: var(--color-white);
+  display: grid;
+  background-image: var(--hero-bg-url);
+  background-position: center;
+  background-size: cover;
+  height: var(--hero-height, initial);
+  color: var(--hero-text-color);
+  margin: 0;
+}
+.hero > * {
+  z-index: 1;
+  height: 100%;
+  width: 100%;
+  grid-area: 1/-1;
+  padding-block: 2rem;
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  text-align: center;
+  align-items: center;
+  justify-content: space-between;
+  backdrop-filter: blur(3px) brightness(0.7);
+}
+.hero .hero-arrow {
+  width: fit-content;
+  animation: slide-up-down 1s ease-in-out infinite alternate-reverse;
+}
+
+@keyframes slide-up-down {
+  0% {
+    transform: translateY(-5px);
+  }
+  100% {
+    transform: translateY(5px);
+  }
+}
+.repel {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: var(--repel-vertical-alignment, center);
+  gap: var(--repel-gutter, 0);
+}
+
+.repel[data-nowrap] {
+  flex-wrap: nowrap;
+}
+
+/*
+SWITCHER
+More info: https://every-layout.dev/layouts/switcher/
+A layout that allows you to lay **2** items next to each other
+until there is not enough horizontal space to allow that.
+
+CUSTOM PROPERTIES AND CONFIGURATION
+--gutter (var(--space-size-1)): This defines the space
+between each item
+
+--switcher-target-container-width (40rem): How large the container
+needs to be to allow items to sit inline with each other
+
+--switcher-vertical-alignment How items should align vertically.
+Can be any acceptable flexbox alignment value.
+*/
+.switcher {
+  --gutter: 10rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--gutter, var(--space-3xl));
+  justify-content: space-between;
+  align-items: var(--switcher-vertical-alignment, flex-start);
+}
+
+.switcher > * {
+  flex-grow: 1;
+  flex-basis: calc((var(--switcher-target-container-width, 60rem) - 100%) * 999);
+}
+
+/* Max 2 items,
+  so anything greater than 2 is full width */
+.wrapper {
+  margin-inline: auto;
+  max-width: clamp(16rem, var(--max-wrapper-width, 100vw), 80rem);
+  padding-inline: var(--gutter);
+  position: relative;
+  --gutter: var(--space-xs);
+}
+
+.visually-hidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 0;
+  margin: 0;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+  white-space: nowrap;
+}
+
+.element-linkable {
+  position: relative;
+}
+.element-linkable a::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+}
+
+button {
+  font-family: var(--ff-bold);
+  cursor: pointer;
+  border-radius: var(--border-radius);
+  padding-inline: var(--space-m);
+  padding-block: var(--space-2xs);
+  background-color: var(--button-bg);
+  color: var(--button-txt-color);
+  transition: all linear 0.15s;
+  outline: 2px solid;
+  outline-offset: -2px;
+  outline-color: var(--outline-color, transparent);
+}
+button img,
+button svg {
+  width: 1.25em;
+  transition: transform linear 0.15s;
+}
+button.primary {
+  --button-bg: var(--color-brown);
+  --button-txt-color: var(--color-white);
+}
+button.primary:hover {
+  --button-bg: var(--color-dark-brown);
+}
+button.secondary {
+  --button-bg: transparent;
+  --button-txt-color: var(--color-white);
+  --outline-color: var(--color-white);
+}
+button.secondary:hover {
+  --button-bg: var(--color-white);
+  --button-txt-color: var(--color-black);
+}
+button.secondary:hover img,
+button.secondary:hover svg {
+  transform: translateX(0.2em);
+}
+button.repel {
+  --repel-gutter: var(--space-2xs);
+}
+
+.card {
+  --flow-space: 0.938em;
+}
+.card img,
+.card svg {
+  min-width: var(--card-img-min-width, 7em);
+}
+
+.dark-bg {
+  --bg-color: var(--color-dark-brown);
+  --section-padding: 2.5em;
+  color: var(--color-white);
+}
+
+.framed {
+  position: relative;
+}
+.framed > * {
+  position: inherit;
+  z-index: 2;
+}
+.framed::before, .framed::after {
+  content: "";
+  position: absolute;
+  z-index: 1;
+  inset: 0;
+  background-color: var(--frame-bg-color);
+}
+.framed::before {
+  --frame-bg-color: var(--color-brown);
+  transform: translate(-10px, 10px);
+}
+.framed::after {
+  --frame-bg-color: var(--color-light-brown);
+  transform: translate(10px, -10px);
+}
+
+.navbar {
+  position: var(--navbar-position);
+  width: 100%;
+  color: var(--navbar-txt-color);
+  z-index: 5;
+  transition: all ease-in-out 0.25s;
+}
+.navbar nav li {
+  padding: var(--space-s);
+}
+.navbar.fixed {
+  --navbar-position: fixed;
+}
+.navbar.white-txt {
+  --navbar-txt-color: var(--color-white);
+}
+.navbar.scrolled {
+  background-color: var(--color-white);
+  color: var(--color-black);
+}/*# sourceMappingURL=global.css.map */

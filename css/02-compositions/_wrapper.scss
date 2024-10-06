@@ -1,0 +1,7 @@
+.wrapper {
+  margin-inline: auto;
+  max-width: clamp(16rem, var(--max-wrapper-width, 100vw), 80rem);
+  padding-inline: var(--gutter);
+  position: relative;
+  --gutter: var(--space-xs);
+}

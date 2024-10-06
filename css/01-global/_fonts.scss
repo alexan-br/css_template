@@ -1,0 +1,70 @@
+@font-face {
+  font-family: "NewYork";
+  src: url("/fonts/newyork.OTF") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Poppins Light", sans-serif;
+  src: url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Poppins SemiBold", sans-serif;
+  src: url("https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap");
+  font-weight: 600;
+  font-style: normal;
+}
+
+.font {
+  font-family: var(--font-family, inherit);
+  font-size: var(--font-size, 1rem);
+  &--regular {
+    --font-family: var(--ff-base);
+  }
+  &--bold {
+    --font-family: var(--ff-bold);
+  }
+  &--cursive {
+    --font-family: var(--ff-cursive);
+  }
+  &--size--2 {
+    --font-size: var(--size-step--2);
+    max-width: var(--max-body-text-width);
+  }
+  &--size--1 {
+    --font-size: var(--size-step--1);
+    max-width: var(--max-body-text-width);
+  }
+  &--size--0 {
+    --font-size: var(--size-step-0);
+    max-width: var(--min-body-text-width);
+  }
+  &--size-1 {
+    --font-size: var(--size-step-1);
+    max-width: var(--min-body-text-width);
+  }
+  &--size-2 {
+    --font-size: var(--size-step-2);
+    max-width: var(--max-title-text-width);
+  }
+  &--size-3 {
+    --font-size: var(--size-step-3);
+    max-width: var(--max-title-text-width);
+  }
+  &--size-4 {
+    --font-size: var(--size-step-4);
+    max-width: var(--min-title-text-width);
+  }
+  &--size-5 {
+    --font-size: var(--size-step-5);
+    max-width: var(--min-title-text-width);
+  }
+  &--size-max {
+    --font-size: var(--size-max);
+    max-width: var(--min-title-text-width);
+  }
+}

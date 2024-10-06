@@ -1,0 +1,22 @@
+.navbar {
+  position: var(--navbar-position);
+  width: 100%;
+  color: var(--navbar-txt-color);
+  z-index: 5;
+  transition: all ease-in-out 0.25s;
+  nav {
+    li {
+      padding: var(--space-s);
+    }
+  }
+  &.fixed {
+    --navbar-position: fixed;
+  }
+  &.white-txt {
+    --navbar-txt-color: var(--color-white);
+  }
+  &.scrolled {
+    background-color: var(--color-white);
+    color: var(--color-black);
+  }
+}

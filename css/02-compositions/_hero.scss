@@ -1,0 +1,39 @@
+.hero {
+  --hero-bg-url: url("/img/nathan-dumlao-tA90pRfL2gM-unsplash.webp");
+  --hero-height: 100dvh;
+  --hero-text-color: var(--color-white);
+  display: grid;
+  background-image: var(--hero-bg-url);
+  background-position: center;
+  background-size: cover;
+  height: var(--hero-height, initial);
+  color: var(--hero-text-color);
+  margin: 0;
+  > * {
+    z-index: 1;
+    height: 100%;
+    width: 100%;
+    grid-area: 1/-1;
+    padding-block: 2rem;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    text-align: center;
+    align-items: center;
+    justify-content: space-between;
+    backdrop-filter: blur(3px) brightness(0.7);
+  }
+  .hero-arrow {
+    width: fit-content;
+    animation: slide-up-down 1s ease-in-out infinite alternate-reverse;
+  }
+}
+
+@keyframes slide-up-down {
+  0% {
+    transform: translateY(-5px);
+  }
+  100% {
+    transform: translateY(5px);
+  }
+}

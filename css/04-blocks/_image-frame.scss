@@ -1,0 +1,23 @@
+.framed {
+  position: relative;
+  > * {
+    position: inherit;
+    z-index: 2;
+  }
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    z-index: 1;
+    inset: 0;
+    background-color: var(--frame-bg-color);
+  }
+  &::before {
+    --frame-bg-color: var(--color-brown);
+    transform: translate(-10px, 10px);
+  }
+  &::after {
+    --frame-bg-color: var(--color-light-brown);
+    transform: translate(10px, -10px);
+  }
+}

@@ -1,0 +1,65 @@
+:root {
+  --ff-base: "Poppins Light";
+  --ff-bold: "Poppins SemiBold";
+  --ff-cursive: "NewYork";
+
+  --size-step--2: clamp(0.7813rem, 0.7759rem + 0.0268vw, 0.8rem);
+  --size-step--1: clamp(0.9375rem, 0.9196rem + 0.0893vw, 1rem);
+  --size-step-0: clamp(1.125rem, 1.0893rem + 0.1786vw, 1.25rem);
+  --size-step-1: clamp(1.35rem, 1.2893rem + 0.3036vw, 1.5625rem);
+  --size-step-2: clamp(1.62rem, 1.5248rem + 0.4759vw, 1.9531rem);
+  --size-step-3: clamp(1.944rem, 1.8019rem + 0.7106vw, 2.4414rem);
+  --size-step-4: clamp(2.3328rem, 2.1274rem + 1.0271vw, 3.0518rem);
+  --size-step-5: clamp(2.7994rem, 2.5093rem + 1.4505vw, 3.8147rem);
+  --size-max: clamp(7rem, 4rem + 2vw, 8.125rem);
+
+  --color-white: #f5f5f5;
+  --color-black: #121212;
+  --color-grey: #b4b4b4;
+
+  --color-light-brown: #b79f7e;
+  --color-brown: #613712;
+  --color-dark-brown: #38220e;
+
+  --color-success: #2daa29;
+  --color-error: #ca1b1b;
+  --color-warning: #c4822c;
+
+  --space-3xs: clamp(0.3125rem, 0.3125rem + 0vw, 0.3125rem);
+  --space-2xs: clamp(0.5625rem, 0.5446rem + 0.0893vw, 0.625rem);
+  --space-xs: clamp(0.875rem, 0.8571rem + 0.0893vw, 0.9375rem);
+  --space-s: clamp(1.125rem, 1.0893rem + 0.1786vw, 1.25rem);
+  --space-m: clamp(1.6875rem, 1.6339rem + 0.2679vw, 1.875rem);
+  --space-l: clamp(2.25rem, 2.1786rem + 0.3571vw, 2.5rem);
+  --space-xl: clamp(3.375rem, 3.2679rem + 0.5357vw, 3.75rem);
+  --space-2xl: clamp(4.5rem, 4.3571rem + 0.7143vw, 5rem);
+  --space-3xl: clamp(6.75rem, 6.5357rem + 1.0714vw, 7.5rem);
+
+  --small-width: 10rem;
+  --medium-width: 30rem;
+  --large-width: 60rem;
+  --wide-width: 90rem;
+  --max-width: 100vw;
+
+  --elevation-0-offsetY: 0px;
+  --elevation-0-blur: 0px;
+  --elevation-100-offsetY: 2px;
+  --elevation-100-blur: 2px;
+  --elevation-200-offsetY: 4px;
+  --elevation-200-blur: 4px;
+  --elevation-300-offsetY: 8px;
+  --elevation-300-blur: 8px;
+  --elevation-400-offsetY: 16px;
+  --elevation-400-blur: 16px;
+
+  --txt-align-right: right;
+  --txt-align-center: center;
+  --txt-align-left: left;
+
+  --max-body-text-width: 80ch;
+  --min-body-text-width: 60ch;
+  --max-title-text-width: 40ch;
+  --min-title-text-width: 20ch;
+
+  --border-radius: 5px;
+}
